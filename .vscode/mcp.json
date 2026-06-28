@@ -1,0 +1,8 @@
+{
+  "servers": {
+    "expense-splitter": {
+      "url": "https://expense-splitter-mcp.onrender.com/mcp",
+      "type": "http"
+    }
+  }
+}
