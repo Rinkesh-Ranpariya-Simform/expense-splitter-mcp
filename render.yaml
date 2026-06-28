@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: expense-splitter-mcp
+    runtime: node
+    buildCommand: npm install && npm run build
+    startCommand: TRANSPORT=http node dist/index.js
+    healthCheckPath: /health
+    envVars:
+      - key: MONGODB_URI
+        sync: false
+      - key: TRANSPORT
+        value: http
